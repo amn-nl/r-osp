@@ -1,7 +1,0 @@
-"0","library(here)
-
-source(here(""bucuresti/report.R""))
-"
-"2","Warning: cannot open file '/Users/roxana/Code/r-osp/source/table4.csv': No such file or directory"
-"2","Error in file(file, ""rt"") : cannot open the connection
-"
