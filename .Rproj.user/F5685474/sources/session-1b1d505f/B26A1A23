@@ -1,0 +1,26 @@
+{
+    "id": "B26A1A23",
+    "path": "~/Code/r-osp/generateReports.R",
+    "project_path": "generateReports.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1728653362221.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "56,1",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1728653574,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1728653574840,
+    "read_only": false,
+    "read_only_alternatives": []
+}

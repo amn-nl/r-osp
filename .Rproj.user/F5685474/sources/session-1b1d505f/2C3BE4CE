@@ -1,0 +1,27 @@
+{
+    "id": "2C3BE4CE",
+    "path": "~/Code/r-osp/bucuresti/report.Rmd",
+    "project_path": "bucuresti/report.Rmd",
+    "type": "r_markdown",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1728653382302.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "75,6",
+        "scrollLine": "0",
+        "last_setup_crc32": ""
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1729171000,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1729171000205,
+    "read_only": false,
+    "read_only_alternatives": []
+}

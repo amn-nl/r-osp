@@ -1,0 +1,217 @@
+factor,total,s1,s2,s3,s4,s5,s6
+"A. Liceu - Filiera teoretică",7439,1074,1243,1473,998,923,1728
+"Real",4635,742,766,896,628,520,1083
+"1. Matematică-Informatică",1726,262,263,310,251,185,455
+"2. Matematică-Informatică - bilingv - limba engleză",861,153,153,165,101,102,187
+"3. Matematică-Informatică - bilingv - limba franceză",43,8,13,5,4,4,9
+"4. Matematică-Informatică - bilingv - limba germană",64,21,8,13,7,5,10
+"5. Matematică-Informatică - bilingv - limba italiană",19,1,1,14,1,1,1
+"6. Matematică-Informatică - bilingv - limba spaniolă",36,5,4,4,8,6,9
+"7. Matematică-Informatică - intensiv informatică",205,26,40,34,23,23,59
+"8. Matematică-Informatică - intensiv limba engleză",153,29,20,30,25,16,33
+"9. Matematică-Informatică - matern limba germană",25,10,4,5,1,2,3
+"10. Matematică-Informatică - cu predare a limbii materne bulgară",0,0,0,0,0,0,0
+"11. Matematică-Informatică - clase speciale, matern limba germană",29,8,6,3,4,4,4
+"12. Științe ale naturii",887,119,151,193,129,101,194
+"13. Științe ale naturii - bilingv limba engleză",453,83,84,85,53,59,89
+"14. Științe ale naturii - bilingv limba italiană",18,2,2,4,5,0,5
+"15. Științe ale naturii - intensiv limba engleză",106,12,17,28,14,11,24
+"16. Științe ale naturii - matern limba italiană",7,3,0,2,2,0,0
+"17. Științe ale naturii - matern limba maghiară",3,0,0,1,0,1,1
+"Uman",2804,332,477,577,370,403,645
+"18. Filologie",833,89,156,166,109,118,195
+"19. Filologie - bilingv - limba engleză",651,74,113,148,70,98,148
+"20. Filologie - bilingv - limba franceză",26,2,8,3,6,2,5
+"21. Filologie - bilingv - limba germană",37,11,7,10,2,2,5
+"22. Filologie - bilingv - limba italiană",30,1,2,20,0,3,4
+"23. Filologie - bilingv - limba portugheză",1,0,1,0,0,0,0
+"24. Filologie - bilingv - limba spaniolă",51,8,11,10,6,2,14
+"25. Filologie - intensiv limba engleză",129,17,22,27,21,16,26
+"26. Filologie - intensiv limba franceză",7,1,2,0,1,0,3
+"27. Filologie - intensiv limba japoneză",25,2,2,6,2,8,5
+"28. Filologie - intensiv limba chineză",2,0,0,0,1,0,1
+"29. Filologie - cu predare a limbii materne bulgară",0,0,0,0,0,0,0
+"30. Filologie - matern limba germană",16,5,3,3,1,1,3
+"31. Filologie - cu predare a limbii materne neogreacă",2,0,0,0,0,0,2
+"32. Filologie - cu predare a limbii materne rromani",12,1,1,4,0,2,4
+"33. Filologie - cu predare a limbii materne rusă",6,0,3,0,1,0,2
+"34. Științe sociale",593,63,86,105,96,107,136
+"35. Științe sociale - matern limba germană",14,4,2,5,2,1,0
+"36. Științe sociale - intensiv limba engleză",159,26,21,30,23,19,40
+"37. Științe sociale - bilingv limba engleză",205,28,37,38,27,24,51
+"38. Științe sociale - bilingv limba germană",5,0,0,2,2,0,1
+"B. Liceu - Filiera tehnologică",526,54,109,106,64,58,135
+"Tehnic / Chimie industrială",7,1,0,3,0,2,1
+"39. Tehnician în chimie industrială",7,1,0,3,0,2,1
+"Tehnic / Construcții, instalații și lucrări publice",30,2,5,7,4,3,9
+"40. Tehnician desenator pentru construcții și instalații",15,2,3,3,2,1,4
+"41. Tehnician în construcții și lucrări publice",11,0,2,2,2,1,4
+"42. Tehnician instalator pentru construcții",4,0,0,2,0,1,1
+"Tehnic / Electric",36,2,7,9,6,1,11
+"43. Tehnician electrician electronist auto",21,2,4,2,4,1,8
+"44. Tehnician electrotehnist",2,0,0,2,0,0,0
+"45. Tehnician metrolog",1,0,0,0,1,0,0
+"46. Tehnician energetician",1,0,0,1,0,0,0
+"47. Tehnician în instalații electrice",11,0,3,4,1,0,3
+"Tehnic / Electromecanică",23,4,5,3,1,2,8
+"48. Tehnician aviație",15,3,4,3,1,1,3
+"49. Tehnician electromecanic",4,0,1,0,0,1,2
+"50. Tehnician instalații de bord (avion)",4,1,0,0,0,0,3
+"Tehnic / Electronică automatizări",7,0,1,1,0,0,5
+"51. Tehnician de telecomunicații - intensiv limba engleză",2,0,0,1,0,0,1
+"52. Tehnician în automatizări",2,0,0,0,0,0,2
+"53. Tehnician operator tehnică de calcul",1,0,0,0,0,0,1
+"54. Tehnician operator roboți industriali",2,0,1,0,0,0,1
+"Tehnic / Fabricarea produselor din lemn",7,2,3,1,0,1,0
+"55. Tehnician designer mobilă și amenajări interioare",7,2,3,1,0,1,0
+"Tehnic / Industrie textilă și pielărie",11,0,1,4,0,1,5
+"56. Tehnician designer vestimentar",11,0,1,4,0,1,5
+"Tehnic / Mecanică",55,11,12,11,2,6,13
+"57. Tehnician mecanic pentru întreținere și reparații",28,7,6,3,1,5,6
+"58. Tehnician mecatronist",1,1,0,0,0,0,0
+"59. Tehnician prelucrări pe mașini cu comandă numerică",10,3,2,4,0,0,1
+"60. Tehnician prelucrări mecanice",3,0,2,1,0,0,0
+"61. Tehnician proiectant CAD",4,0,0,0,1,0,3
+"62. Tehnician transporturi",9,0,2,3,0,1,3
+"Tehnic / Producție media",23,3,1,3,2,4,10
+"63. Tehnician multimedia",6,0,0,0,2,1,3
+"64. Tehnician operator procesare text / imagine",1,0,0,0,0,1,0
+"65. Tehnician producție film și televiziune",7,1,0,1,0,1,4
+"66. Tehnician producție film și televiziune, intensiv limba engleză",1,0,0,0,0,0,1
+"67. Tehnician audio - video",8,2,1,2,0,1,2
+"Tehnic / Tehnici poligrafice",0,0,0,0,0,0,0
+"68. Tehnician poligraf",0,0,0,0,0,0,0
+"Resurse naturale și protecția mediului / Agricultură",12,1,1,1,1,3,5
+"69. Tehnician veterinar",6,1,1,0,1,1,2
+"70. Tehnician în agroturism",4,0,0,1,0,2,1
+"71. Tehnician pentru animale de companie",2,0,0,0,0,0,2
+"Resurse naturale și protecția mediului / Industrie alimentară",4,0,0,0,0,3,1
+"72. Tehnician analize produse alimentare",1,0,0,0,0,0,1
+"73. Tehnician analize produse alimentare - intensiv limba engleză",0,0,0,0,0,0,0
+"74. Tehnician în industria alimentară",2,0,0,0,0,2,0
+"75. Tehnician în morărit, panificație și produse făinoase",0,0,0,0,0,0,0
+"76. Tehnician în prelucrarea produselor de origine animală",1,0,0,0,0,1,0
+"Resurse naturale și protecția mediului / Chimie industrială",1,1,0,0,0,0,0
+"77. Tehnician chimist de laborator",1,1,0,0,0,0,0
+"Resurse naturale și protecția mediului / Protecția mediului",0,0,0,0,0,0,0
+"78. Tehnician ecolog și protecția calității mediului",0,0,0,0,0,0,0
+"79. Tehnician ecolog și protecția calității mediului – intensiv limba engleză",0,0,0,0,0,0,0
+"Servicii / Comerț",10,0,3,3,0,1,3
+"80. Tehnician în achiziții și contractări",5,0,2,1,0,1,1
+"81. Tehnician în activități de comerț",5,0,1,2,0,0,2
+"Servicii / Economic",228,17,63,48,37,19,44
+"82. Tehnician în activități de poștă - intensiv limba franceză",1,0,0,0,0,0,1
+"83. Tehnician în activități economice",154,13,45,26,29,11,30
+"84. Tehnician în activități economice - intensiv limba chineză",5,1,1,1,0,1,1
+"85. Tehnician în activități economice - intensiv limba engleză",52,2,12,17,7,6,8
+"86. Tehnician în activități economice - intensiv limba spaniolă",7,0,3,2,0,0,2
+"87. Tehnician în activități economice - intensiv limba italiană",1,1,0,0,0,0,0
+"88. Tehnician în administrație",8,0,2,2,1,1,2
+"Servicii / Estetica și igiena corpului omenesc",35,5,4,8,2,9,7
+"89. Coafor stilist",35,5,4,8,2,9,7
+"Servicii / Turism și alimentație",37,5,3,4,9,3,13
+"90. Organizator banqueting",4,0,0,0,1,1,2
+"91. Organizator banqueting - intensiv limba engleză",0,0,0,0,0,0,0
+"92. Tehnician în gastronomie",5,2,0,0,0,1,2
+"93. Tehnician în gastronomie - intensiv limba engleză",0,0,0,0,0,0,0
+"94. Tehnician în hotelărie",0,0,0,0,0,0,0
+"95. Tehnician în hotelărie - intensiv limba engleză",0,0,0,0,0,0,0
+"96. Tehnician în turism",17,2,2,2,6,1,4
+"97. Tehnician în turism - intensiv limba engleză",10,1,1,1,2,0,5
+"98. Tehnician în turism - intensiv limba franceză",0,0,0,0,0,0,0
+"99. Tehnician în turism - intensiv limba greacă",0,0,0,0,0,0,0
+"100. Tehnician în turism - intensiv limba germană",1,0,0,1,0,0,0
+"C. Liceu – Filiera vocațională",769,83,118,153,124,104,187
+"Arte vizuale",218,26,32,52,37,23,48
+"101. Desenator tehnic pentru arhitectură și design",165,17,24,37,31,18,38
+"102. Tehnician pentru tehnici artistice",53,9,8,15,6,5,10
+"Coregrafie",13,1,3,2,1,2,4
+"103. Balerin / Dansator",13,1,3,2,1,2,4
+"Muzică",44,3,9,5,8,6,13
+"104. Instrumentist",44,3,9,5,8,6,13
+"Pedagogic",49,3,6,7,3,9,21
+"105. Învățător – educatoare",44,3,5,5,3,9,19
+"106. Educator puericultor",5,0,1,2,0,0,2
+"Sportiv",409,48,66,76,70,58,91
+"107. Instructor sportiv",409,48,66,76,70,58,91
+"Teatru",17,0,2,7,3,2,3
+"108. Instructor de teatru",17,0,2,7,3,2,3
+"Teologic",19,2,0,4,2,4,7
+"109. Ghid turism religios",1,0,0,1,0,0,0
+"110. Teologie adventistă",0,0,0,0,0,0,0
+"111. Teologie baptistă",1,1,0,0,0,0,0
+"112. Teologie ortodoxă",16,1,0,3,2,4,6
+"113. Teologie penticostală",1,0,0,0,0,0,1
+"D. Liceu - Învățământ special - Filiera teoretică",80,5,21,15,13,6,20
+"Real",47,4,14,8,6,3,12
+"114. Științe ale naturii",47,4,14,8,6,3,12
+"Umanist",33,1,7,7,7,3,8
+"115. Filologie",33,1,7,7,7,3,8
+"E. Învățământ profesional ",186,25,41,25,23,36,36
+"Chimie industrială",0,0,0,0,0,0,0
+"116. Operator industria de medicamente și produse cosmetice",0,0,0,0,0,0,0
+"Comerț",17,3,3,3,2,1,5
+"117. Comerciant - vânzător",15,2,2,3,2,1,5
+"118. Recepționer - distribuitor",2,1,1,0,0,0,0
+"Construcții, instalații și lucrări publice",1,0,0,1,0,0,0
+"119. Instalator de instalații tehnico-sanitare și de gaze",1,0,0,1,0,0,0
+"120. Instalator de instalații de încălzire centrală",0,0,0,0,0,0,0
+"Electric",6,0,3,0,2,0,1
+"121. Electrician auto",5,0,2,0,2,0,1
+"122. Electrician exploatare centrale, stații și rețele electrice",0,0,0,0,0,0,0
+"123. Electrician exploatare joasă tensiune",1,0,1,0,0,0,0
+"Electromecanică",1,0,1,0,0,0,0
+"124. Frigotehnist",0,0,0,0,0,0,0
+"125. Electromecanic utilaje și instalații comerciale, electrocasnice și din industria alimentară",1,0,1,0,0,0,0
+"Electronică automatizări",2,0,0,0,0,0,2
+"126. Electronist rețele de telecomunicații",1,0,0,0,0,0,1
+"127. Electronist aparate și echipamente",1,0,0,0,0,0,1
+"Industrie alimentară",4,0,2,0,1,1,0
+"128. Brutar - patiser - preparator produse făinoase",3,0,1,0,1,1,0
+"129. Operator în industria zahărului și a produselor zaharoase",0,0,0,0,0,0,0
+"130. Preparator produse din carne și pește",1,0,1,0,0,0,0
+"131. Operator în industria malțului și a berii",0,0,0,0,0,0,0
+"Mecanică",53,8,12,5,6,10,12
+"132. Mecanic auto",46,8,10,5,3,8,12
+"133. Mecanic utilaje și instalații în industrie",1,0,1,0,0,0,0
+"134. Tinichigiu vopsitor auto",2,0,0,0,1,1,0
+"135. Operator la mașini cu comandă numerică",0,0,0,0,0,0,0
+"136. Frezor - rabotor - mortezor",0,0,0,0,0,0,0
+"137. Mecanic aeronave",2,0,0,0,2,0,0
+"138. Mecanic agricol",2,0,1,0,0,1,0
+"139. Mecanic de mecanică fină",0,0,0,0,0,0,0
+"Producție media",6,2,0,1,2,1,0
+"140. Operator producție și exploatare film",6,2,0,1,2,1,0
+"Tehnici poligrafice",0,0,0,0,0,0,0
+"141. Legător",0,0,0,0,0,0,0
+"142. Tipăritor offset",0,0,0,0,0,0,0
+"Turism și alimentație",45,4,10,7,5,12,7
+"143. Bucătar",25,4,5,5,3,6,2
+"144. Ospătar (chelner) vânzător în unități de alimentație",14,0,4,1,0,5,4
+"145. Lucrător hotelier",5,0,1,1,1,1,1
+"146. Cofetar - patiser",1,0,0,0,1,0,0
+"Estetica și igiena corpului omenesc",51,8,10,8,5,11,9
+"147. Frizer - coafor - manichiurist - pedichiurist",51,8,10,8,5,11,9
+"F. Învățământ profesional special",30,2,8,4,4,1,11
+"Construcții, instalații și lucrări publice",2,0,1,0,1,0,0
+"148. Instalator de instalații tehnico-sanitare și de gaze",1,0,1,0,0,0,0
+"149. Zugrav - ipsosar - vopsitor - tapetar",1,0,0,0,1,0,0
+"Agricultură",2,0,1,0,0,0,1
+"150. Horticultor",0,0,0,0,0,0,0
+"151. Agricultor culturi de câmp",2,0,1,0,0,0,1
+"Fabricarea produselor din lemn",0,0,0,0,0,0,0
+"152. Tâmplar universal",0,0,0,0,0,0,0
+"Industrie alimentară",1,0,0,0,1,0,0
+"153. Brutar - patiser - preparator produse făinoase",0,0,0,0,0,0,0
+"154. Preparator produse din carne și pește",1,0,0,0,1,0,0
+"Mecanică",4,0,1,1,0,0,2
+"155. Constructor - montator de structuri metalice",4,0,1,1,0,0,2
+"Tehnici poligrafice",2,0,1,0,0,0,1
+"156. Tipăritor offset",2,0,1,0,0,0,1
+"Turism și alimentație",18,2,3,3,2,1,7
+"157. Bucătar",13,2,2,3,1,1,4
+"158. Lucrător hotelier",5,0,1,0,1,0,3
+"Industrie textilă şi pielărie",1,0,1,0,0,0,0
+"159. Confecționer produse textile",1,0,1,0,0,0,0
+"G. Altele",822,80,157,193,114,104,174
+"160. Nu știu încă",822,80,157,193,114,104,174
