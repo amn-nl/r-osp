@@ -1,0 +1,559 @@
+label,friendly
+Intenționezi să-ți continui studiile după absolvirea clasei a VIII-a?,q_1
+Da,q_1_1
+Nu,q_1_2
+Care este specializarea sau calificarea profesională pe care intenționezi să o urmezi după terminarea clasei a VIII-a? Alege o singură opțiune din cele 182 prezentate mai jos.,q_2
+A. Liceu - Filieră teoretică,q_2_sum_q_2_1_to_q_2_39
+Real,q_2_sum_q_2_1_to_q_2_18
+1. Matematică-Informatică,q_2_1
+2. Matematică-Informatică - bilingv - limba engleză,q_2_2
+3. Matematică-Informatică - bilingv - limba franceză,q_2_3
+4. Matematică-Informatică - bilingv - limba germană,q_2_4
+5. Matematică-Informatică - bilingv - limba italiană,q_2_5
+6. Matematică-Informatică - bilingv - limba spaniolă,q_2_6
+7. Matematică-Informatică - clasă specială de limba germană,q_2_7
+8. Matematică-Informatică - cu predare a limbii materne bulgară,q_2_8
+9. Matematică-Informatică - intensiv informatică,q_2_9
+10. Matematică-Informatică - intensiv limba engleză,q_2_10
+11. Matematică-Informatică - matern limba germană,q_2_11
+12. Științe ale naturii,q_2_12
+13. Științe ale naturii - bilingv limba engleză,q_2_13
+14. Științe ale naturii - bilingv limba germană,q_2_14
+15. Științe ale naturii - bilingv limba italiană,q_2_15
+16. Științe ale naturii - intensiv limba engleză,q_2_16
+17. Științe ale naturii - matern limba italiană,q_2_17
+18. Științe ale naturii - matern limba maghiară,q_2_18
+Umanist,q_2_sum_q_2_19_to_q_2_39
+19. Filologie,q_2_19
+20. Filologie - bilingv - limba engleză,q_2_20
+21. Filologie - bilingv - limba franceză,q_2_21
+22. Filologie - bilingv - limba germană,q_2_22
+23. Filologie - bilingv - limba italiană,q_2_23
+24. Filologie - bilingv - limba portugheză,q_2_24
+25. Filologie - bilingv - limba spaniolă,q_2_25
+26. Filologie - cu predare a limbii materne bulgară,q_2_26
+27. Filologie - cu predare a limbii materne neogreacă,q_2_27
+28. Filologie - cu predare a limbii materne rromani,q_2_28
+29. Filologie - cu predare a limbii materne rusă,q_2_29
+30. Filologie - intensiv limba chineză,q_2_30
+31. Filologie - intensiv limba engleză,q_2_31
+32. Filologie - intensiv limba franceză,q_2_32
+33. Filologie - intensiv limba japoneză,q_2_33
+34. Filologie - matern limba germană,q_2_34
+35. Științe sociale,q_2_35
+36. Științe sociale - bilingv limba engleză,q_2_36
+37. Științe sociale - bilingv limba germană,q_2_37
+38. Științe sociale - clasă specială de limba germană,q_2_38
+39. Științe sociale - intensiv limba engleză,q_2_39
+B. Liceu - Filieră tehnologică,q_2_sum_q_2_40_to_q_2_101
+Resurse naturale și protecția mediului / Agricultură,q_2_sum_q_2_40_to_q_2_43
+40. Tehnician horticultor,q_2_40
+41. Tehnician în agroturism,q_2_41
+42. Tehnician pentru animale de companie,q_2_42
+43. Tehnician veterinar,q_2_43
+Resurse naturale și protecția mediului / Chimie industrială,q_2_sum_q_2_44_to_q_2_44
+44. Tehnician chimist de laborator,q_2_44
+Resurse naturale și protecția mediului / Industrie alimentară,q_2_sum_q_2_45_to_q_2_48
+45. Tehnician analize produse alimentare,q_2_45
+46. Tehnician în industria alimentară,q_2_46
+"47. Tehnician în morărit, panificație și produse făinoase",q_2_47
+48. Tehnician în prelucrarea produselor de origine animală,q_2_48
+Resurse naturale și protecția mediului / Protecția mediului,q_2_sum_q_2_49_to_q_2_49
+49. Tehnician ecolog și protecția calității mediului,q_2_49
+Servicii / Comerț,q_2_sum_q_2_50_to_q_2_51
+50. Tehnician în achiziții și contractări,q_2_50
+51. Tehnician în activități de comerț,q_2_51
+Servicii / Economic,q_2_sum_q_2_52_to_q_2_58
+52. Tehnician în activități de poștă - intensiv limba franceză,q_2_52
+53. Tehnician în activități economice,q_2_53
+54. Tehnician în activități economice - intensiv limba chineză,q_2_54
+55. Tehnician în activități economice - intensiv limba engleză,q_2_55
+56. Tehnician în activități economice - intensiv limba franceză,q_2_56
+57. Tehnician în activități economice - intensiv limba spaniolă,q_2_57
+58. Tehnician în administrație,q_2_58
+Servicii / Estetica și igiena corpului omenesc,q_2_sum_q_2_59_to_q_2_59
+59. Coafor stilist,q_2_59
+Servicii / Turism și alimentație,q_2_sum_q_2_60_to_q_2_69
+60. Organizator banqueting,q_2_60
+61. Organizator banqueting - intensiv limba engleză,q_2_61
+62. Tehnician în gastronomie,q_2_62
+63. Tehnician în gastronomie - intensiv limba engleză,q_2_63
+64. Tehnician în hotelărie,q_2_64
+65. Tehnician în hotelărie - intensiv limba engleză,q_2_65
+66. Tehnician în turism,q_2_66
+67. Tehnician în turism - intensiv limba engleză,q_2_67
+68. Tehnician în turism - intensiv limba franceză,q_2_68
+69. Tehnician în turism - intensiv limba greacă,q_2_69
+"Tehnic / Construcții, instalații și lucrări publice",q_2_sum_q_2_70_to_q_2_72
+70. Tehnician desenator pentru construcții și instalații,q_2_70
+71. Tehnician instalator pentru construcții,q_2_71
+72. Tehnician în construcții și lucrări publice,q_2_72
+Tehnic / Electric,q_2_sum_q_2_73_to_q_2_77
+73. Tehnician electrician electronist auto,q_2_73
+74. Tehnician electrotehnist,q_2_74
+75. Tehnician energetician,q_2_75
+76. Tehnician în instalații electrice,q_2_76
+77. Tehnician metrolog,q_2_77
+Tehnic / Electromecanică,q_2_sum_q_2_78_to_q_2_80
+78. Tehnician aviație,q_2_78
+79. Tehnician electromecanic,q_2_79
+80. Tehnician instalații de bord (avion),q_2_80
+Tehnic / Electronică automatizări,q_2_sum_q_2_81_to_q_2_85
+81. Tehnician de telecomunicații - intensiv limba engleză,q_2_81
+82. Tehnician electronist,q_2_82
+83. Tehnician în automatizări,q_2_83
+84. Tehnician operator roboți industriali,q_2_84
+85. Tehnician operator tehnică de calcul,q_2_85
+Tehnic / Fabricarea produselor din lemn,q_2_sum_q_2_86_to_q_2_86
+86. Tehnician designer mobilă și amenajări interioare,q_2_86
+Tehnic / Industrie textilă și pielărie,q_2_sum_q_2_87_to_q_2_88
+87. Tehnician designer vestimentar,q_2_87
+88. Tehnician designer vestimentar - intensiv limba franceză,q_2_88
+Tehnic / Mecanică,q_2_sum_q_2_89_to_q_2_95
+89. Tehnician mecanic pentru întreținere și reparații,q_2_89
+90. Tehnician mecanic pentru întreținere și reparații - intensiv limba franceză,q_2_90
+91. Tehnician mecatronist,q_2_91
+92. Tehnician prelucrări mecanice,q_2_92
+93. Tehnician prelucrări pe mașini cu comandă numerică,q_2_93
+94. Tehnician proiectant CAD,q_2_94
+95. Tehnician transporturi,q_2_95
+Tehnic / Producție media,q_2_sum_q_2_96_to_q_2_100
+96. Tehnician audio - video,q_2_96
+97. Tehnician multimedia,q_2_97
+98. Tehnician operator procesare text / imagine,q_2_98
+99. Tehnician producție film și televiziune,q_2_99
+100. Tehnician producție film și televiziune - intensiv limba engleză,q_2_100
+Tehnic / Tehnici poligrafice,q_2_sum_q_2_101_to_q_2_101
+101. Tehnician poligraf,q_2_101
+C. Liceu - Filiera vocațională,q_2_sum_q_2_102_to_q_2_116
+Artistic,q_2_sum_q_2_102_to_q_2_106
+102. Desenator tehnic pentru arhitectură și design,q_2_102
+103. Tehnician pentru tehnici artistice,q_2_103
+104. Conservare - restaurare bunuri culturale,q_2_104
+105. Balerin / Dansator (coregrafie),q_2_105
+106. Instrumentist (muzică),q_2_106
+Pedagogic,q_2_sum_q_2_107_to_q_2_108
+107. Educator puericultor,q_2_107
+108. Învățător – educatoare,q_2_108
+Sportiv,q_2_sum_q_2_109_to_q_2_109
+109. Instructor sportiv,q_2_109
+Teatru,q_2_sum_q_2_110_to_q_2_110
+110. Instructor de teatru,q_2_110
+Teologic,q_2_sum_q_2_111_to_q_2_116
+111. Ghid turism religios (religia greco-catolică),q_2_111
+112. Ghid turism religios catolic,q_2_112
+113. Teologie adventistă,q_2_113
+114. Teologie baptistă,q_2_114
+115. Teologie ortodoxă,q_2_115
+116. Teologie penticostală,q_2_116
+D. Liceu - Învățământ special - Filiera teoretică,q_2_sum_q_2_117_to_q_2_118
+Real,q_2_sum_q_2_117_to_q_2_117
+117. Științe ale naturii,q_2_117
+Umanist,q_2_sum_q_2_118_to_q_2_118
+118. Filologie,q_2_118
+E. Învățământ profesional de masă,q_2_sum_q_2_119_to_q_2_145
+Chimie industrială,q_2_sum_q_2_119_to_q_2_119
+119. Operator industria de medicamente și produse cosmetice,q_2_119
+Comerț,q_2_sum_q_2_120_to_q_2_121
+120. Comerciant - vânzător,q_2_120
+121. Recepționer - distribuitor,q_2_121
+"Construcții, instalații și lucrări publice",q_2_sum_q_2_122_to_q_2_123
+122. Instalator de instalații de încălzire centrală,q_2_122
+123. Instalator de instalații tehnico-sanitare și de gaze,q_2_123
+Electric,q_2_sum_q_2_124_to_q_2_126
+124. Electrician auto,q_2_124
+125. Electrician constructor,q_2_125
+126. Electrician exploatare joasă tensiune,q_2_126
+Electromecanică,q_2_sum_q_2_127_to_q_2_128
+"127. Electromecanic utilaje și instalații comerciale, electrocasnice și din industria alimentară",q_2_127
+128. Frigotehnist,q_2_128
+Electronică automatizări,q_2_sum_q_2_129_to_q_2_130
+129. Electronist aparate și echipamente,q_2_129
+130. Electronist rețele de telecomunicații,q_2_130
+Estetica și igiena corpului omenesc,q_2_sum_q_2_131_to_q_2_131
+131. Frizer - coafor - manichiurist - pedichiurist,q_2_131
+Industrie alimentară,q_2_sum_q_2_132_to_q_2_134
+132. Brutar - patiser - preparator produse făinoase,q_2_132
+133. Operator în industria zahărului și a produselor zaharoase,q_2_133
+134. Preparator produse din carne și pește,q_2_134
+Industrie textilă şi pielărie,q_2_sum_q_2_135_to_q_2_135
+135. Confecționer produse textile,q_2_135
+Mecanică,q_2_sum_q_2_136_to_q_2_140
+136. Mecanic aeronave,q_2_136
+137. Mecanic auto,q_2_137
+138. Mecanic utilaje și instalații în industrie,q_2_138
+139. Operator la mașini cu comandă numerică,q_2_139
+140. Tinichigiu vopsitor auto,q_2_140
+Tehnici poligrafice,q_2_sum_q_2_141_to_q_2_142
+141. Legător,q_2_141
+142. Tipăritor offset,q_2_142
+Turism și alimentație,q_2_sum_q_2_143_to_q_2_145
+143. Bucătar,q_2_143
+144. Lucrător hotelier,q_2_144
+145. Ospătar (chelner) vânzător în unități de alimentație,q_2_145
+F. Învățământ profesional special,q_2_sum_q_2_146_to_q_2_159
+Agricultură,q_2_sum_q_2_146_to_q_2_147
+146. Agricultor culturi de câmp,q_2_146
+147. Horticultor,q_2_147
+Comerț,q_2_sum_q_2_148_to_q_2_148
+148. Recepționer - distribuitor,q_2_148
+"Construcții, instalații și lucrări publice",q_2_sum_q_2_149_to_q_2_150
+149. Instalator de instalații tehnico-sanitare și de gaze,q_2_149
+150. Zugrav - ipsosar - vopsitor - tapetar,q_2_150
+Estetica și igiena corpului omenesc,q_2_sum_q_2_151_to_q_2_151
+151. Frizer - coafor - manichiurist - pedichiurist,q_2_151
+Fabricarea produselor din lemn,q_2_sum_q_2_152_to_q_2_152
+152. Tâmplar universal,q_2_152
+Industrie alimentară,q_2_sum_q_2_153_to_q_2_154
+153. Brutar - patiser - preparator produse făinoase,q_2_153
+154. Preparator produse din carne și pește,q_2_154
+Mecanică,q_2_sum_q_2_155_to_q_2_155
+155. Constructor - montator de structuri metalice,q_2_155
+Tehnici poligrafice,q_2_sum_q_2_156_to_q_2_156
+156. Tipăritor offset,q_2_156
+Turism și alimentație,q_2_sum_q_2_157_to_q_2_159
+157. Bucătar,q_2_157
+158. Cofetar - patiser,q_2_158
+159. Lucrător hotelier,q_2_159
+G. Învățământ profesional dual de masă,q_2_sum_q_2_160_to_q_2_181
+Comerț,q_2_sum_q_2_160_to_q_2_160
+160. Comerciant - vânzător,q_2_160
+"Construcții, instalații și lucrări publice",q_2_sum_q_2_161_to_q_2_163
+161. Instalator de instalații de încălzire centrală,q_2_161
+162. Instalator de instalații tehnico-sanitare și de gaze,q_2_162
+163. Constructor structuri monolite,q_2_163
+Electric,q_2_sum_q_2_164_to_q_2_166
+"164. Electrician exploatare centrale, stații și rețele electrice",q_2_164
+165. Electrician constructor,q_2_165
+166. Electrician exploatare joasă tensiune,q_2_166
+Electronică automatizări,q_2_sum_q_2_167_to_q_2_168
+167. Electronist aparate și echipamente,q_2_167
+168. Electronist rețele de telecomunicații,q_2_168
+Industrie alimentară,q_2_sum_q_2_169_to_q_2_170
+169. Brutar - patiser - preparator produse făinoase,q_2_169
+170. Preparator produse din carne și pește,q_2_170
+Mecanică,q_2_sum_q_2_171_to_q_2_177
+171. Mecanic aeronave,q_2_171
+172. Mecanic auto,q_2_172
+173. Mecanic agricol,q_2_173
+174. Mecanic de mecanică fină,q_2_174
+175. Frezor - rabotor - mortezor,q_2_175
+176. Operator la mașini cu comandă numerică,q_2_176
+177. Tinichigiu vopsitor auto,q_2_177
+Tehnici poligrafice,q_2_sum_q_2_178_to_q_2_178
+178. Tipăritor offset,q_2_178
+Turism și alimentație,q_2_sum_q_2_179_to_q_2_181
+179. Bucătar,q_2_179
+180. Lucrător hotelier,q_2_180
+181. Ospătar (chelner) vânzător în unități de alimentație,q_2_181
+H. Altele,q_2_sum_q_2_182_to_q_2_182
+182. Nu știu încă,q_2_182
+Care este liceul pe care intenționezi să-l urmezi după terminarea clasei a VIII-a? Alege o singură opțiune dintre cele 126 prezentate mai jos.,q_3
+Licee cu învățământ liceal de masă din București - Sectorul 1,q_3_sum_q_3_1_to_q_3_26
+1. Colegiul Economic „V. Madgearu”,q_3_1
+2. Colegiul German „Goethe”,q_3_2
+3. Colegiul Național „Aurel Vlaicu”,q_3_3
+4. Colegiul Național „I. L. Caragiale”,q_3_4
+5. Colegiul Național „Ion Neculce”,q_3_5
+6. Colegiul Național „Sfântul Sava”,q_3_6
+7. Colegiul Național de Informatică „Tudor Vianu”,q_3_7
+8. Colegiul Național de Muzică „George Enescu”,q_3_8
+9. Colegiul Tehnic „Dinicu Golescu”,q_3_9
+10. Colegiul Tehnic „Media”,q_3_10
+11. Colegiul Tehnic „Mircea cel Bătrân”,q_3_11
+12. Colegiul Tehnic de Aeronautică „Henri Coandă”,q_3_12
+13. Colegiul Tehnic de Arhitectură și Lucrări Publice „Ioan N. Socolescu”,q_3_13
+14. Colegiul Tehnic Feroviar „Mihai I”,q_3_14
+15. Colegiul Tehnic Mecanic „Valter Mărăcineanu”,q_3_15
+16. Colegiul Tehnologic „Viaceslav Harnaj”,q_3_16
+17. Liceul „Dimitrie Paciurea”,q_3_17
+18. Liceul de Arte Plastice „Nicolae Tonitza”,q_3_18
+19. Liceul Greco-Catolic „Timotei Cipariu”,q_3_19
+20. Liceul Teoretic „Alexandru Vlahuță”,q_3_20
+21. Liceul Teoretic „Constantin Brâncoveanu”,q_3_21
+22. Liceul Teoretic „George Călinescu”,q_3_22
+23. Liceul Teoretic „Jean Monnet”,q_3_23
+24. Liceul Teoretic „Nicolae Iorga”,q_3_24
+25. Liceul Teoretic Bilingv „Miguel de Cervantes”,q_3_25
+26. Liceul Teoretic Bulgar „Hristo Botev”,q_3_26
+Licee cu învățământ liceal de masă din București - Sectorul 2,q_3_sum_q_3_27_to_q_3_49
+27. Colegiul Economic „A. D. Xenopol”,q_3_27
+28. Colegiul Economic „Hermes”,q_3_28
+29. Colegiul Național „Cantemir Vodă”,q_3_29
+30. Colegiul Național „Emil Racoviță”,q_3_30
+31. Colegiul Național „Iulia Hașdeu”,q_3_31
+32. Colegiul Național „Mihai Viteazul”,q_3_32
+33. Colegiul Național „Spiru Haret”,q_3_33
+34. Colegiul Național „Victor Babeș”,q_3_34
+35. Colegiul Național Bilingv „George Coșbuc”,q_3_35
+36. Colegiul Tehnic „Dimitrie Leonida”,q_3_36
+37. Colegiul Tehnic „Edmond Nicolau”,q_3_37
+38. Liceul Tehnologic „Ion I.C. Brătianu”,q_3_38
+39. Liceul Tehnologic „Constantin Brâncuși”,q_3_39
+40. Liceul Tehnologic „Nikola Tesla”,q_3_40
+41. Liceul Tehnologic „Sfântul Pantelimon”,q_3_41
+42. Liceul Teoretic „Ady Endre”,q_3_42
+43. Liceul Teoretic „C.A. Rosetti”,q_3_43
+44. Liceul Teoretic „Lucian Blaga”,q_3_44
+45. Liceul Teoretic „Mihail Sadoveanu”,q_3_45
+46. Liceul Teoretic „Traian”,q_3_46
+47. Liceul Teoretic Bilingv „Ita Wegman”,q_3_47
+48. Liceul Teoretic Waldorf,q_3_48
+49. Colegiul Național Școala Centrală,q_3_49
+Licee cu învățământ liceal de masă din București - Sectorul 3,q_3_sum_q_3_50_to_q_3_63
+50. Colegiul Național „Matei Basarab”,q_3_50
+51. Colegiul Tehnic „Anghel Saligny”,q_3_51
+52. Colegiul Tehnic „Costin D. Nenițescu”,q_3_52
+53. Colegiul Tehnic „Mihai Bravu”,q_3_53
+54. Liceul Tehnologic „Dragomir Hurmuzescu”,q_3_54
+55. Liceul Tehnologic „Elie Radu”,q_3_55
+56. Liceul Tehnologic „Theodor Pallady”,q_3_56
+57. Liceul Teologic Baptist „Logos”,q_3_57
+58. Liceul Teoretic „Alexandru Ioan Cuza”,q_3_58
+59. Liceul Teoretic „Benjamin Franklin”,q_3_59
+60. Liceul Teoretic „Dante Alighieri”,q_3_60
+61. Liceul Teoretic „Decebal”,q_3_61
+62. Liceul Teoretic „Nichita Stănescu”,q_3_62
+63. Școala Superioară Comercială „Nicolae Kretzulescu”,q_3_63
+Licee cu învățământ liceal de masă din București - Sectorul 4,q_3_sum_q_3_64_to_q_3_76
+64. Colegiul Național „Gheorghe Șincai”,q_3_64
+65. Colegiul Național „Ion Creangă”,q_3_65
+66. Colegiul Național „Mihai Eminescu”,q_3_66
+67. Colegiul Național „Octav Onicescu”,q_3_67
+68. Colegiul Național de Arte „Dinu Lipatti”,q_3_68
+69. Colegiul Romano-Catolic „Sfântul Iosif”,q_3_69
+70. Liceul de Coregrafie „Floria Capsali”,q_3_70
+71. Liceul Tehnologic „Dacia”,q_3_71
+72. Liceul Economic Nr. 1,q_3_72
+73. Liceul Tehnologic de Metrologie „Traian Vuia”,q_3_73
+74. Liceul Teologic Adventist „Ștefan Demetrescu”,q_3_74
+75. Liceul Teologic Penticostal „Emanuel”,q_3_75
+76. Seminarul Teologic Ortodox,q_3_76
+Licee cu învățământ liceal de masă din București - Sectorul 5,q_3_sum_q_3_77_to_q_3_85
+77. Colegiul Economic „Viilor”,q_3_77
+78. Colegiul Național „Gheorghe Lazăr”,q_3_78
+79. Colegiul Tehnic de Industrie Alimentară „Dumitru Moțoc”,q_3_79
+80. Colegiul Tehnic Energetic,q_3_80
+81. Colegiul Tehnologic „Grigore Cerchez”,q_3_81
+82. Liceul Tehnologic „Dimitrie Gusti”,q_3_82
+83. Liceul Teoretic „Dimitrie Bolintineanu”,q_3_83
+84. Liceul Teoretic „Ion Barbu”,q_3_84
+85. Liceul Teoretic „Ștefan Odobleja”,q_3_85
+Licee cu învățământ liceal de masă din București - Sectorul 6,q_3_sum_q_3_86_to_q_3_99
+86. Colegiul Economic „Costin C. Kirițescu”,q_3_86
+87. Colegiul Național „Elena Cuza”,q_3_87
+88. Colegiul Național „Grigore Moisil”,q_3_88
+89. Colegiul Tehnic „Carol I”,q_3_89
+90. Colegiul Tehnic „Gheorghe Asachi”,q_3_90
+91. Colegiul Tehnic „Iuliu Maniu”,q_3_91
+92. Colegiul Tehnic „Petru Maior”,q_3_92
+93. Colegiul Tehnic de Poștă și Telecomunicații „Gheorghe Airinei”,q_3_93
+94. Liceul cu Program Sportiv „Mircea Eliade”,q_3_94
+95. Liceul Tehnologic „Petru Poni”,q_3_95
+96. Liceul Tehnologic „Sf. Antim Ivireanul”,q_3_96
+97. Liceul Teoretic „Eugen Lovinescu”,q_3_97
+98. Liceul Teoretic „Marin Preda”,q_3_98
+99. Liceul Teoretic „Tudor Vladimirescu”,q_3_99
+Licee cu învățământ liceal special din București - Sectorul 2,q_3_sum_q_3_100_to_q_3_101
+100. Liceul Tehnologic Special „Regina Elisabeta”,q_3_100
+101. Liceul Tehnologic Special Nr. 3,q_3_101
+Licee cu învățământ profesional și profesional dual de masă din București - Sectorul 1,q_3_sum_q_3_102_to_q_3_105
+102. Colegiul Tehnic „Dinicu Golescu”,q_3_102
+103. Colegiul Tehnic de Aeronautică „Henri Coandă”,q_3_103
+104. Colegiul Tehnologic „Viaceslav Harnaj”,q_3_104
+105. Colegiul Tehnic Mecanic „Valter Mărăcineanu”,q_3_105
+Licee cu învățământ profesional și profesional dual de masă din București - Sectorul 2,q_3_sum_q_3_106_to_q_3_107
+106. Liceul Tehnologic „Nikola Tesla”,q_3_106
+107. Liceul Tehnologic „Ion I.C. Brătianu”,q_3_107
+Licee cu învățământ profesional și profesional dual de masă din București - Sectorul 3,q_3_sum_q_3_108_to_q_3_112
+108. Colegiul Tehnic „Anghel Saligny”,q_3_108
+109. Colegiul Tehnic „Mihai Bravu”,q_3_109
+110. Liceul Tehnologic „Dragomir Hurmuzescu”,q_3_110
+111. Liceul Tehnologic „Elie Radu”,q_3_111
+112. Liceul Tehnologic „Theodor Pallady”,q_3_112
+Licee cu învățământ profesional și profesional dual de masă din București - Sectorul 5,q_3_sum_q_3_113_to_q_3_113
+113. Colegiul Tehnic de Industrie Alimentară „Dumitru Moțoc”,q_3_113
+Licee cu învățământ profesional și profesional dual de masă din București - Sectorul 6,q_3_sum_q_3_114_to_q_3_116
+114. Colegiul Tehnic „Carol I”,q_3_114
+115. Colegiul Tehnic de Poștă și Telecomunicații „Gheorghe Airinei”,q_3_115
+116. Colegiul Economic „Costin C. Kirițescu”,q_3_116
+Licee cu învățământ profesional special din București - Sectorul 2,q_3_sum_q_3_117_to_q_3_122
+117. Liceul Tehnologic Special Nr. 3,q_3_117
+118. Școala Profesională Specială pentru Deficienți de Vedere,q_3_118
+119. Școala Profesională Specială Nr. 2,q_3_119
+120. Școala Profesională Specială Nr. 3,q_3_120
+121. Liceul Tehnologic Special „Regina Elisabeta”,q_3_121
+122. Centrul Școlar de Educație Incluzivă Nr. 1,q_3_122
+Licee cu învățământ profesional special dual din București - Sectorul 6,q_3_sum_q_3_123_to_q_3_123
+123. Școala Profesională Specială pentru Deficienți de Auz „Sfânta Maria”,q_3_123
+Altele,q_3_sum_q_3_124_to_q_3_126
+124. Un liceu privat,q_3_124
+125. Un liceu din alt județ,q_3_125
+126. Nu știu încă,q_3_126
+Cine / ce te-a influențat cel mai mult în alegerea făcută? Alege cel mult trei variante de răspuns.,q_4
+a. Aptitudinile personale,q_4_1
+b. Prestigiul școlii,q_4_2
+c. Apropierea școlii de casă,q_4_3
+d. Perspectiva financiară oferită de domeniul profesional ales pentru care mă pregătesc,q_4_4
+e. Părinții,q_4_5
+"f. Prietenii, anturajul",q_4_6
+g. Influenceri / rețele sociale,q_4_7
+h. Sugestiile / recomandările dirigintelui,q_4_8
+i. Sugestiile / recomandările profesorului consilier școlar,q_4_9
+j. Recomandările altora,q_4_10
+k. Profilul ales este necesar pentru a practica profesia pe care doresc să o urmez,q_4_11
+l. Profilul ales mă va ajuta să practic o meserie cerută pe piața muncii,q_4_12
+m. Rezultatele școlare obținute în gimnaziu,q_4_13
+Cu cine te-ai consultat în alegerea școlii pe care vrei să o urmezi? Alege una sau mai multe dintre opțiunile prezentate mai jos.,q_5
+a. Familia,q_5_1
+b. Dirigintele,q_5_2
+c. Profesorii,q_5_3
+d. Prietenii,q_5_4
+e. Consilierul școlar,q_5_5
+f. Alții,q_5_6
+g. Am decis singur,q_5_7
+"Cât de bine informat(ă) consideri că ești despre unitățile școlare pe care le poți urma după absolvirea clasei a VIII-a (post gimnaziale - filieră, profil, specializare, adresă, prestigiu etc.)? Alege o singură variantă de răspuns.",q_6
+Foarte bine informat(ă),q_6_1
+Bine informat(ă),q_6_2
+Puțin informat(ă),q_6_3
+Deloc informat(ă),q_6_4
+Nu știu,q_6_5
+"Cât de bine informat(ă) consideri că ești cu privire la piața muncii (oportunități pentru diferite meserii - meserii solicitate, meserii mai puțin sau deloc solicitate)? Alege o singură variantă de răspuns.",q_7
+Foarte bine informat(ă),q_7_1
+Bine informat(ă),q_7_2
+Puțin informat(ă),q_7_3
+Deloc informat(ă),q_7_4
+Nu știu,q_7_5
+În ce domeniu de activitate ai prefera să lucrezi? Alege cel mult trei variante de răspuns.,q_8
+a. Justiție,q_8_1
+b. Artă,q_8_2
+c. Arhitectură,q_8_3
+d. Agricultură,q_8_4
+e. Administrarea afacerilor,q_8_5
+"f. Inginerie și noile tehnologii (robotică, nanotehnologie, biotehnologie etc.)",q_8_6
+g. Turism,q_8_7
+h. Armată,q_8_8
+i. Mass-media,q_8_9
+j. Educație / învățământ,q_8_10
+k. Cercetare,q_8_11
+l. Medicină,q_8_12
+m. Teologie,q_8_13
+n. Informatică / computer science,q_8_14
+o. Publicitate,q_8_15
+"p. Ecologie, protecția mediului",q_8_16
+q. Curierat,q_8_17
+r. Transport,q_8_18
+s. Sport,q_8_19
+ș. Politică și relații internaționale,q_8_20
+t. Psihologie / dezvoltare personală,q_8_21
+ț. Finanțe - bănci,q_8_22
+u. Asistență socială,q_8_23
+v. Poliție,q_8_24
+w. Comerț,q_8_25
+x. Altele,q_8_26
+y. Nu știu / Nu răspund,q_8_27
+Care este în opinia ta cel mai important aspect pentru a reuși în domeniul ales? Alege cel mult trei variante de răspuns.,q_9
+a. O bună pregătire teoretică,q_9_1
+b. O bună pregătire practică,q_9_2
+"c. Disciplina (respectarea regulilor, normelor)",q_9_3
+d. Inteligența emoțională,q_9_4
+e. Aptitudinile / pasiunile,q_9_5
+f. Seriozitatea,q_9_6
+g. Consecvența / perseverența,q_9_7
+h. Încrederea în sine,q_9_8
+i. Capacitatea de a lua decizii,q_9_9
+j. Abilitatea de a lucra în echipă,q_9_10
+k. Profilul ales este necesar pentru a practica profesia pe care doresc să o urmez,q_9_11
+l. Rezultatele foarte bune la învățătură / performanțele școlare,q_9_12
+m. Rezistența la efort,q_9_13
+n. Capacitatea de a face față situațiilor stresante,q_9_14
+o. Abilitatea de a apela la sprijinul celorlalți,q_9_15
+p. Altele,q_9_16
+Care sunt principalii factori care te determină să obții rezultate bune la învățătură? Alege cel mult trei variante de răspuns.,q_10
+a. Motivația pentru învățare,q_10_1
+b. Suportul emoțional oferit de familie pe parcursul școlarizării,q_10_2
+"c. Baza materială a școlii (săli de clasă amenajate modern, terenuri de sport, laboratoare, aparatură de specialitate pentru desfășurarea cursurilor în sistem online, echipamente, consumabile etc.)",q_10_3
+"d. Suport tehnic adecvat acasă pentru susținerea cursurilor în sistem online (laptop / tabletă / telefon, conexiune internet)",q_10_4
+e. O bună relație cu  profesorii clasei,q_10_5
+f. Dorința de afirmare,q_10_6
+g. Dorința de a-ți mulțumi părinții,q_10_7
+h. Recompense materiale oferite de familie,q_10_8
+i. Calitatea actului didactic (activitatea desfășurată la clasă sau în sistem online de către profesori),q_10_9
+j. Stilul didactic și personalitatea profesorului,q_10_10
+k. Atractivitatea disciplinelor de studiu,q_10_11
+l. Climatul educațional stimulativ (atmosfera din clasă și din școală),q_10_12
+m. Autodisciplina,q_10_13
+n. Altele,q_10_14
+În ce măsură crezi că vei reuși să fii admis(ă) în liceul pe care l-ai ales? Alege o singură variantă de răspuns.,q_11
+În foarte mare măsură,q_11_1
+În mare măsură,q_11_2
+În mică măsură,q_11_3
+În foarte mică măsură,q_11_4
+Deloc,q_11_5
+Nu știu,q_11_6
+În ce măsură crezi că vei reuși să ai cariera pe care o dorești? Alege o singură variantă de răspuns.,q_12
+În foarte mare măsură,q_12_1
+În mare măsură,q_12_2
+În mică măsură,q_12_3
+În foarte mică măsură,q_12_4
+Deloc,q_12_5
+Nu știu,q_12_6
+În ce măsură ești dispus(ă) să depui efort pentru a-ți construi cariera dorită? Alege o singură variantă de răspuns.,q_13
+În foarte mare măsură,q_13_1
+În mare măsură,q_13_2
+În mică măsură,q_13_3
+În foarte mică măsură,q_13_4
+Deloc,q_13_5
+Nu știu,q_13_6
+În ce măsură crezi că piața muncii îți va oferi posibilitatea de a practica meseria / profesia dorită? Alege o singură variantă de răspuns.,q_14
+În foarte mare măsură,q_14_1
+În mare măsură,q_14_2
+În mică măsură,q_14_3
+În foarte mică măsură,q_14_4
+Deloc,q_14_5
+Nu știu,q_14_6
+În ce măsură ți-ai dori ca studiile liceale să le urmezi în România:,q_15_a
+În foarte mare măsură,q_15_a_1
+În mare măsură,q_15_a_2
+Într-o oarecare măsură,q_15_a_3
+În mică măsură,q_15_a_4
+În foarte mică măsură,q_15_a_5
+În ce măsură ți-ai dori ca studiile liceale să le urmezi în alt stat decât România:,q_15_b
+În foarte mare măsură,q_15_b_1
+În mare măsură,q_15_b_2
+Într-o oarecare măsură,q_15_b_3
+În mică măsură,q_15_b_4
+În foarte mică măsură,q_15_b_5
+Consideri că profilul și specializarea pe care dorești să le urmezi îți vor permite un acces mai ușor pe piața muncii mai degrabă:,q_16
+În România,q_16_1
+În alte state din Uniunea Europeană,q_16_2
+În alte state,q_16_3
+"Având în vedere opțiunile școlare exprimate, precum și rezultatele tale școlare de până acum, ce traseu educațional te gândești să parcurgi? Alege o singură variantă de răspuns.",q_17
+Clasa a IX-a,q_17_1
+Clasele a IX-a și a X-a,q_17_2
+Clasele IX - XI,q_17_3
+Clasele IX - XII,q_17_4
+Învățământ profesional,q_17_5
+Învățământ profesional dual,q_17_6
+Liceu și studii postliceale,q_17_7
+Liceu și studii superioare,q_17_8
+Altele,q_17_9
+Nu știu,q_17_10
+"Opțiunea ta la întrebarea anterioară a fost f) (Învățământ profesional dual), precizează care este cel mai important aspect, în opinia ta, care stă la baza alegerii acestui traseu educațional. Alege cel mult trei variante de răspuns.",q_18
+a. Prestigiul angajatorului / operatorului economic.,q_18_1
+b. Posibilitatea de a urma un stagiu de pregătire profesională finanțat de către operatorul economic.,q_18_2
+c. Oportunitatea de angajare în domeniul în care te pregătești profesional.,q_18_3
+d. Posibilitatea de a avea loc de muncă imediat după terminarea formării profesionale.,q_18_4
+"e. Posibilitatea de a avea venituri / independență financiară pe perioada studiilor (bursă de stat și bursă acordată de către operator, cazare, masă etc.).",q_18_5
+f. Posibilitatea recunoașterii studiilor și de către alți angajatori de la nivel național și european.,q_18_6
+g. Apropierea unității școlare de domiciliu.,q_18_7
+Sectorul în care locuiești:,q_19
+Sectorul 1,q_19_1
+Sectorul 2,q_19_2
+Sectorul 3,q_19_3
+Sectorul 4,q_19_4
+Sectorul 5,q_19_5
+Sectorul 6,q_19_6
+Genul:,q_20
+Masculin,q_20_1
+Feminin,q_20_2

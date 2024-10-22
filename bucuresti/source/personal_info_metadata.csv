@@ -1,0 +1,9 @@
+label,friendly
+Numărul elevului,studentIdentifier
+Prenume,participant.firstName
+Inițiala tatălui,participant.sortName
+Nume,participant.lastName
+Clasa,participant.class
+Status testare,participant.testStatus
+Data testării,participant.testDate
+Școala,participant.school
