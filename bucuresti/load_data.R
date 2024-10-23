@@ -105,11 +105,11 @@ get_data_for_question <- function(df, metadatas, question_short, isq23 = FALSE)
   question_label <-  subset(all_metadata, friendly == question_short)$label
   if(isq23 == TRUE)
   {
-    result <- calculate_sums_for_question(raport_data, paste0(question_short, '_'), question_columns, question_label)
+    result <- calculate_sums_for_question(report_data, paste0(question_short, '_'), question_columns, question_label)
   }
   else
   {
-    result <- calculate_sums_for_question(raport_data, paste0(question_short, '_'), question_answers, question_label)
+    result <- calculate_sums_for_question(report_data, paste0(question_short, '_'), question_answers, question_label)
   }
   return(result)
 }
@@ -123,8 +123,8 @@ add_question_sheet <- function(df, metadatas, wb, sheet_name, sheet_index, quest
 
 add_questions_2_3_sheet <- function(df, metadatas, wb, sheet_name, sheet_index, question_short)
 {
-  question_data <- get_data_for_question(raport_data, all_metadata, question_short, TRUE)
-  question_combined_columns <- raport_data %>% select(starts_with(paste0(question_short, "_sum")))
+  question_data <- get_data_for_question(report_data, all_metadata, question_short, TRUE)
+  question_combined_columns <- report_data %>% select(starts_with(paste0(question_short, "_sum")))
   
   for(factor_sum in colnames(question_combined_columns))
   {
@@ -135,7 +135,7 @@ add_questions_2_3_sheet <- function(df, metadatas, wb, sheet_name, sheet_index, 
     factor_sum_limits <- as.numeric(sub("q_\\d+_", "", factor_sum_parts))
     factor_sum_columns <- paste(question_short, seq(factor_sum_limits[1], factor_sum_limits[2]), sep = "_")
     
-    factor_sum_values <- calculate_sums_for_factors(raport_data, factor_sum_columns)
+    factor_sum_values <- calculate_sums_for_factors(report_data, factor_sum_columns)
     
     index <- which(question_data[1] == factor_sum)
     question_data[index, 2:8] <- factor_sum_values
@@ -149,6 +149,87 @@ add_questions_2_3_sheet <- function(df, metadatas, wb, sheet_name, sheet_index, 
   addWorksheet(wb, sheet_name, gridLines = TRUE)
   writeData(wb, sheet = sheet_index, question_data, startRow = 1, rowNames = FALSE)
 }
+
+calculate_q2_q3_combination <- function(df, columns, result_column_names)
+{
+  q2_columns <- columns[startsWith(columns, "q_2_")]
+  q3_columns <- columns[startsWith(columns, "q_3_")]
+  
+  combinations <- expand.grid(q2 = q2_columns, q3 = q3_columns)
+  
+  #For each combination, calculate the sum of rows where both q2 and q3 are 1
+  sum_values <- apply(combinations, 1, function(combo) {
+    sum(df[[combo[1]]] == 1 & df[[combo[2]]] == 1, na.rm = TRUE)
+  })
+  
+  combinations_result <- data.frame(
+    q2_column = combinations$q2,
+    q3_column = combinations$q3,
+    sums = sum_values
+  )
+  
+  result <- data.frame(combinations = character(), sums = numeric(), stringsAsFactors = FALSE)
+  
+  # Get unique q3 values
+  unique_q3 <- unique(combinations_result$q3_column)
+  
+  # Loop through each unique q3 value
+  for (q3 in unique_q3) {
+    # Get the corresponding q2 values for this q3 value
+    q2_values <- combinations_result$q2_column[combinations_result$q3_column == q3]
+    
+    # Sum values where q3 matches
+    sum_values <- sum(combinations_result$sums[combinations_result$q3_column == q3])
+    
+    # Add the q3 entry to the result
+    result <- rbind(result, data.frame(combinations = q3, sums = sum_values, stringsAsFactors = FALSE))
+    
+    # For each corresponding q2 value, append it to the result
+    for (q2 in q2_values) {
+      # Get the value for this q2 entry
+      value_for_q2 <- combinations_result$sums[combinations_result$q2_column == q2 & combinations_result$q3_column == q3]
+      
+      # Add the q2 entry to the result
+      result <- rbind(result, data.frame(combinations = q2, sums = value_for_q2, stringsAsFactors = FALSE))
+    }
+  }
+  colnames(result)<- result_column_names
+  return(result)
+}
+
+add_q2_q3_combination_sheet <- function(df, metadatas, wb, sheet_name, sheet_index, question_short)
+{
+  total_result <- calculate_q2_q3_combination(df, columns_with_result, c("friendly", "total"))
+  s1_result <- calculate_q2_q3_combination(df %>% filter(q_19_1 == 1), columns_with_result, c("friendly", "s1"))
+  s2_result <- calculate_q2_q3_combination(df %>% filter(q_19_2 == 1), columns_with_result, c("friendly", "s2"))
+  s3_result <- calculate_q2_q3_combination(df %>% filter(q_19_3 == 1), columns_with_result, c("friendly", "s3"))
+  s4_result <- calculate_q2_q3_combination(df %>% filter(q_19_4 == 1), columns_with_result, c("friendly", "s4"))
+  s5_result <- calculate_q2_q3_combination(df %>% filter(q_19_5 == 1), columns_with_result, c("friendly", "s5"))
+  s6_result <- calculate_q2_q3_combination(df %>% filter(q_19_6 == 1), columns_with_result, c("friendly", "s6"))
+  
+  
+  total_result$s1 <- s1_result$s1
+  total_result$s2 <- s2_result$s2
+  total_result$s3 <- s3_result$s3
+  total_result$s4 <- s4_result$s4
+  total_result$s5 <- s5_result$s5
+  total_result$s6 <- s6_result$s6
+  total_result <- total_result[total_result$total > 0, ]
+  
+  # rename the friendly column with labels
+  total_result <- total_result %>%
+    left_join(metadatas, by = "friendly") %>%
+    select(label, total, s1, s2, s3, s4, s5, s6) %>%
+    rename(friendly = label)
+  
+  question_label <-  subset(metadatas, friendly == question_short)$label
+  colnames(total_result) <- c(question_label, "Total B", "Din S1", "Din S2", "Din S3", "Din S4", "Din S5", "Din S6")
+  addWorksheet(wb, sheet_name, gridLines = TRUE)
+  writeData(wb, sheet = sheet_index, total_result, startRow = 1, rowNames = FALSE)
+}
+
+
+
 
 
 scriptBaseFolder <- "bucuresti"
@@ -178,30 +259,37 @@ all_columns <- all_metadata$friendly
 
 # add columns without result and sort them using the order of "all_columns"
 columns_without_result <- setdiff(all_columns, colnames(df_transform))
+# keep the name of the columns that have results
+columns_with_result <- colnames(df_transform)
+columns_with_result <- columns_with_result[startsWith(columns_with_result, "q_")]
+                   
 for(column in columns_without_result)
   df_transform[column] <- NA
 
-raport_data <-  df_transform %>% select(all_of(all_columns))
+report_data <-  df_transform %>% select(all_of(all_columns))
 
 
 wb <- createWorkbook("Woorkbook")
 # Sheet Raport
 addWorksheet(wb, "Raport", gridLines = TRUE)
-raport_data_sheet1 <- raport_data
-colnames(raport_data_sheet1) <- all_metadata$label
-writeData(wb, sheet = 1, raport_data, startRow = 3, rowNames = FALSE)
+report_data_sheet1 <- report_data
+colnames(report_data_sheet1) <- all_metadata$label
+writeData(wb, sheet = 1, report_data_sheet1, startRow = 3, rowNames = FALSE)
 
 # Sheet Intrebarea 1
 sheetIndex <- 2
-add_question_sheet(raport_data, all_metadata, wb, "Î1", sheetIndex, "q_1")
+add_question_sheet(report_data, all_metadata, wb, "Î1", sheetIndex, "q_1")
 sheetIndex <- sheetIndex + 1
 
 # Sheet Intrebarea 2
-add_questions_2_3_sheet(raport_data, all_metadata, wb, "Î2", sheetIndex, "q_2")
+add_questions_2_3_sheet(report_data, all_metadata, wb, "Î2", sheetIndex, "q_2")
 sheetIndex <- sheetIndex + 1
 
 # Sheet Intrebarea 3
-add_questions_2_3_sheet(raport_data, all_metadata, wb, "Î3", sheetIndex, "q_3")
+add_questions_2_3_sheet(report_data, all_metadata, wb, "Î3", sheetIndex, "q_3")
+sheetIndex <- sheetIndex + 1
+
+add_q2_q3_combination_sheet(report_data, all_metadata, wb, "Licee și specializări", sheetIndex, "q_3")
 sheetIndex <- sheetIndex + 1
 
 #Sheets for Intrebarea 4 - Intrebarea 20
@@ -209,17 +297,16 @@ for (question_index in seq(4, 20))
 {
   if(question_index == 15)
   {
-    add_question_sheet(raport_data, all_metadata, wb, "Î15 - A", sheetIndex, "q_15_a")
+    add_question_sheet(report_data, all_metadata, wb, "Î15 - A", sheetIndex, "q_15_a")
     sheetIndex <- sheetIndex + 1
-    add_question_sheet(raport_data, all_metadata, wb, "Î15 - B", sheetIndex, "q_15_b")
+    add_question_sheet(report_data, all_metadata, wb, "Î15 - B", sheetIndex, "q_15_b")
     sheetIndex <- sheetIndex + 1
   }
   else
   {
-    add_question_sheet(raport_data, all_metadata, wb, paste0('Î', question_index), sheetIndex, paste0('q_', question_index))
+    add_question_sheet(report_data, all_metadata, wb, paste0('Î', question_index), sheetIndex, paste0('q_', question_index))
     sheetIndex <- sheetIndex + 1
   }
 }
-
 
 saveWorkbook(wb, paste0(here(scriptBaseFolder), "/source/result.xlsx"), overwrite = TRUE)
