@@ -228,31 +228,119 @@ add_q2_q3_combination_sheet <- function(df, metadatas, wb, sheet_name, sheet_ind
   writeData(wb, sheet = sheet_index, total_result, startRow = 1, rowNames = FALSE)
 }
 
+count_occurrences <- function(input_vector, input_data) {
+  # Filter the input data for rows where the number is in the input vector
+  filtered_data <- input_data %>%
+    filter(participant.school %in% input_vector)
+  
+  # Count occurrences of each number
+  result <- filtered_data %>%
+    group_by(participant.school) %>%
+    summarise(occurrences = n())
+  
+  # Return the result
+  return(result)
+}
+
+add_schools_sheet <- function(df, schools, wb, sheet_name, sheet_index)
+{
+  schools_names <- schools$school_name
+  
+  schools_data_all <- count_occurrences(schools_names, df)
+  schools_data_tested <- count_occurrences(schools_names, df %>% filter(`participant.testStatus` == "Testat"))
+  
+  schools_data_with_results <- left_join(schools_data_all, schools_data_tested, by ="participant.school")
+  colnames(schools_data_with_results) <- c('school_name', 'total', 'tested')
+  
+  total_count <- colSums(schools_data_with_results %>% select('total', 'tested'), na.rm = TRUE)
+  
+  schools_data <- schools_data_with_results #left_join(schools, schools_data_with_results, by ='school_name')
+  
+  schools <- schools %>% select("sector", "school_name")
+  schools_data <- left_join(schools, schools_data_with_results, by ="school_name")
+  schools_data[is.na(schools_data)] <- 0
+  
+  colnames(schools_data) <- c('Sectorul', 'Școala',	'Elevi participanți',	'Elevi participanți care au răspuns la chestionar')
+  
+  addWorksheet(wb, sheet_name, gridLines = TRUE)
+  writeData(wb, sheet = sheet_index, total_count[1], startRow = 1, startCol = 3)
+  writeData(wb, sheet = sheet_index, total_count[2], startRow = 1, startCol = 4)
+  writeData(wb, sheet = sheet_index, schools_data, startRow = 2, rowNames = FALSE)
+}
+
+calculate_counts <- function(df)
+{
+    counts <- c(
+      nrow(report_data),
+      nrow(report_data %>% filter(`participant.testStatus` == "Testat")),
+      nrow(report_data %>% filter(`participant.testStatus` == "În testare (50%)")),
+      nrow(report_data %>% filter(`participant.testStatus` == "În sesiune")),
+      nrow(report_data %>% filter(q_1_1 == 1)),
+      nrow(report_data %>% filter(q_1_2 == 1))
+    )
+  return(counts)
+}
+
+add_counts_sheet <- function(df, wb, sheet_name, sheet_index)
+{
+  counts_df <- data.frame (
+    label = c('total', 'tested', 'testing', 'insessie', 'continue', 'stop'),
+    total_counts = calculate_counts(df),
+    s1_counts = calculate_counts(df %>% filter(q_19_1 == 1)),
+    s2_counts = calculate_counts(df %>% filter(q_19_2 == 1)),
+    s3_counts = calculate_counts(df %>% filter(q_19_3 == 1)),
+    s4_counts = calculate_counts(df %>% filter(q_19_4 == 1)),
+    s5_counts = calculate_counts(df %>% filter(q_19_5 == 1)),
+    s6_counts = calculate_counts(df %>% filter(q_19_6 == 1))
+  )
+  counts_df$label <- c(
+    'Numărul total al elevilor de clasa a VIII-a participanți',
+    'Numărul total al elevilor de clasa a VIII-a participanți care au răspuns la chestionar',
+    'Numărul total al elevilor de clasa a VIII-a participanți care au început, dar nu au finalizat completarea chestionarului',
+    'Numărul total al elevilor de clasa a VIII-a participanți care nu au răspuns la chestionar',
+    'Numărul total al elevilor de clasa a VIII-a participanți care au răspuns la chestionar și doresc să continue studiile după terminarea clasei a VIII-a',
+    'Numărul total al elevilor de clasa a VIII-a participanți care au răspuns la chestionar, dar nu doresc să continue studiile după terminarea clasei a VIII-a'
+    
+  )
+  colnames(counts_df) <- c("Participarea la „Chestionarul privind opțiunile școlare și profesionale ale elevilor de clasa a VIII-a”",
+                           "Total B", "Din S1", "Din S2", "Din S3", "Din S4", "Din S5", "Din S6")
+  
+  addWorksheet(wb, sheet_name, gridLines = TRUE)
+  writeData(wb, sheet = sheet_index, counts_df, startRow = 1, rowNames = FALSE)
+}
+
 
 
 
 
 scriptBaseFolder <- "bucuresti"
 
-input <- read.csv(paste0(here(scriptBaseFolder), "/source/XmlResultOsp.csv"), sep = ",")
+#load results and personal info
+input_results <- read.csv(paste0(here(scriptBaseFolder), "/source/XmlResult_bucharest_short.csv"), sep = ",")
+input_personal_info <- read.csv(paste0(here(scriptBaseFolder), "/source/personal_info_bucharest_short.csv"), sep = ",")
+
+#laod metadatas
 questions_metadata <- read.csv(paste0(here(scriptBaseFolder), "/source/osp-bucharest.csv"), sep = ",")
 personal_info_metadata <- read.csv(paste0(here(scriptBaseFolder), "/source/personal_info_metadata.csv"), sep = ",")
-
 all_metadata <- rbind(personal_info_metadata, questions_metadata)
 
-data_structure_columns <- grep("^q", colnames(input), value = TRUE)
+schools_metadata <- read.csv(paste0(here(scriptBaseFolder), "/source/bucharest_schools.csv"), sep = ",")
+
+data_structure_columns <- grep("^q", colnames(input_results), value = TRUE)
 valid_columns <-c('studentIdentifier',
                   'sessionIdentifier',
-                  'participant.firstName',
-                  'participant.lastName',
-                  'participant.sortName',
+                  #'participant.firstName',
+                  #'participant.lastName',
+                  #'participant.sortName',
                   data_structure_columns
 )
 
-input <- input %>% select(valid_columns)
+input_results <- input_results %>% select(valid_columns)
+
+input_data <- left_join(input_personal_info, input_results, by=c("studentIdentifier", "sessionIdentifier"))
 
 # Transform the dataframe and remove the original columns
-df_transform <- transform_df(input, data_structure_columns)
+df_transform <- transform_df(input_data, data_structure_columns)
 
 # get all columns from metadata
 all_columns <- all_metadata$friendly
@@ -276,8 +364,17 @@ report_data_sheet1 <- report_data
 colnames(report_data_sheet1) <- all_metadata$label
 writeData(wb, sheet = 1, report_data_sheet1, startRow = 3, rowNames = FALSE)
 
-# Sheet Intrebarea 1
 sheetIndex <- 2
+
+# Sheet Școli participante
+add_schools_sheet(report_data, schools_metadata, wb, "Școli participante", sheetIndex)
+sheetIndex <- sheetIndex + 1
+
+# Sheet Participare 
+add_counts_sheet(report_data, wb, "Participare", sheetIndex)
+sheetIndex <- sheetIndex + 1
+
+# Sheet Intrebarea 1
 add_question_sheet(report_data, all_metadata, wb, "Î1", sheetIndex, "q_1")
 sheetIndex <- sheetIndex + 1
 
@@ -309,4 +406,4 @@ for (question_index in seq(4, 20))
   }
 }
 
-saveWorkbook(wb, paste0(here(scriptBaseFolder), "/source/result.xlsx"), overwrite = TRUE)
+saveWorkbook(wb, paste0(here(scriptBaseFolder), "/source/result_short.xlsx"), overwrite = TRUE)

@@ -1,0 +1,14 @@
+studentIdentifier,sessionIdentifier,participant.firstName,participant.lastName,participant.testStatus,participant.school
+3E8B9C02-9742-4165-8DBE-43BFBB267122,D2FF9425-4AD2-46DE-88B0-69F1B86B38BD,test6,ospb6,Testat,Colegiul Național „Ion Luca Caragiale” București
+712944B4-FE99-4BDB-B131-0B6A751B5E21,D2FF9425-4AD2-46DE-88B0-69F1B86B38BD,test9,ospb9,Testat,Colegiul Național „Ion Luca Caragiale” București
+90760640-78EF-4343-B69C-0E94044D277E,D2FF9425-4AD2-46DE-88B0-69F1B86B38BD,test8,ospb8,Testat,Colegiul Național „Ion Luca Caragiale” București
+9CB46F22-1C3B-4DEC-8F44-C95D56E84898,5698E553-FC38-45F3-9DBE-AEBB91B6693D,ospb-11,test11,Testat,Școala Gimnazială Nr. 4 București
+62C7BF6A-F317-4385-B331-1F4BFDB17691,E1C30CA7-77AD-4AAB-B64D-CBECF2EEC41A,test4,ospb4,Testat,Școala Gimnazială Nr. 4 București
+F9E6E0CB-3623-4436-AF08-AB6C131F2392,D2FF9425-4AD2-46DE-88B0-69F1B86B38BD,test10,ospb10,Testat,Școala Gimnazială Nr. 311 București
+C30E0DE2-AC00-43B0-84FD-C0AB19992838,D2FF9425-4AD2-46DE-88B0-69F1B86B38BD,test7,ospb7,Testat,Școala Gimnazială Nr. 311 București
+69968ABC-FB1F-4FB1-BBE9-67BCA8A95C87,A6F691FD-D28E-4FD3-8464-B57E313AC995,Roxana5,Test,Testat,Școala Gimnazială Nr. 311 București
+1,11,Roxana1,Test,În sesiune,Școala Gimnazială Nr. 311 București
+2,11,Roxana2,Test,În sesiune,Școala Gimnazială Nr. 311 București
+3,11,Roxana3,Test,În testare (50%),Școala Gimnazială Nr. 311 București
+4,11,Roxana4,Test,În testare (50%),Școala Gimnazială Nr. 4 București
+5,11,Roxana5,Test,În testare (50%),Școala Gimnazială Nr. 4 București
